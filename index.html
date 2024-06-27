@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-[#222] h-screen">
+    <div
+        class="card duration-1000		 transition delay-[2s] ease-in-out sm:mt-[40%] md:mt-[30%] lg:mt-[20%] xl-mt-[10%] w-[90%] max-w-[470px]  mx-auto mb-[0px] py-[40px] px-[35px] text-center rounded-[4px] bg-[linear-gradient(135deg,#00feba,#5b548a)] m-[20px] text-[#fff] mt-[50%]">
+        <div class="search-box w-[100%] flex items-center justify-between ">
+            <input
+                class="input border-0 outline-0 bg-[#ebfffc] text-[#555] py-[10px] px-[25px] h-[60px] rounded-md flex-1 mr-[16px] min-h-[50px] min-w-[50px]"
+                type="text" placeholder="Enter city name" spellcheck="false">
+            <button
+                class="btn border-0 flex items-center justify-center outline-none bg-[#ebfffc] cursor-pointer rounded-[50%] h-[60px] w-[60px]  " >
+                <img class="w-[20px]  text-center" src="weather-app-img/images/search.png" alt=""></button>
+        </div>
+
+        <div class="weather-box flex flex-col items-center hidden duration-1000		 transition delay-[2s] ease-in-out ">
+            <img class="weather-icon w-[200px] sm:ml-[100px] m-auto " src="weather-app-img/images/rain.png" alt="">
+            <h1 class="temp text-[80px] font-[500] "></h1>
+            <h2 class="city text-[45px] font-[400] mt-[-10px]"></h2>
+            <div class="details w-[100%] flex gap-[60px]  justify-between px-[20px] mt-[50px] ">
+                <div class="col flex items-center gap-[10px]">
+                    <img class=" width-[40px] h-[40px] mr-[15px]" src="weather-app-img/images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity text-[20px] mt-[-6px]"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>   
+                <div class="col flex items-center text-left ">
+                    <img class=" width-[40px] h-[40px] mr-[15px]" src="weather-app-img/images/wind.png" alt="">
+                    <div>
+                        <p class="wind text-[20px] mt-[-6px]"></p>
+                        <p>Wind Speed</p>
+                    </div>
+
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
